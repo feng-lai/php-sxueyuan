@@ -25,6 +25,7 @@ class TrainOrder extends Api
         $request = $this->selectParam([
             'name',
             'train_uuid',
+            'platform'
         ]);
         $result = TrainOrderLogic::miniAdd($request,$this->userInfo);
         if (isset($result['msg'])) {

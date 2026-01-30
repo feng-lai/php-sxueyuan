@@ -40,7 +40,8 @@ class MemberOrder extends Api
     {
         $request = $this->selectParam([
             'member_uuid',
-            'pay_type'
+            'pay_type',
+            'platform'
         ]);
         $this->check($request, "MemberOrder.save");
         $result = MemberOrderLogic::cmsAdd($request, $this->userInfo);

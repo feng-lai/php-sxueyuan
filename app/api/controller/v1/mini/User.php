@@ -28,6 +28,7 @@ class User extends Api
         $result = UserLogic::miniList($this->userInfo);
         $this->render(200, ['result' => $result]);
     }
+    /**
     public function update($id)
     {
 
@@ -41,7 +42,7 @@ class User extends Api
         } else {
             $this->render(200, ['result' => $result]);
         }
-    }
+    }**/
 
     public function save(){
         $request = $this->selectParam([
